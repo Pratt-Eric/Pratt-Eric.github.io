@@ -69,6 +69,7 @@ function updateStudentList(){
     currStudents.appendChild(tr);
   }
 }
+
 var fonts = ['Arial', 'Calibri', 'Comic Sans MS', 'Helvetica', 'Times New Roman'];
 var fontElement = document.getElementById("fonts");
 var fontHTML = fontElement.innerHTML;
