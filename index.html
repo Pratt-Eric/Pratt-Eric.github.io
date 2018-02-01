@@ -40,10 +40,8 @@
       <button value="Create Student" onclick="createStudent()">Add Student</button>
     </div>
     <br/>
-    <p>
-      Please choose the font and size that you'd like
-    </p>
-    <select id="fonts" onchange='updateOutput();'>
+    <p>Please choose the font and size that you'd like</p>
+    <select id="fonts" onchange="updateOutput();">
       <option>Font</option>
     </select>
     <select id="sizes" onchange="updateOutput();">
@@ -51,8 +49,7 @@
     </select>
     <br/>
     <br/>
-    <p id="output">
-    </p>
+    <p id="output"></p>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

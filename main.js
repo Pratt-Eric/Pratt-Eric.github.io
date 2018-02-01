@@ -104,8 +104,6 @@ for(var i = 0; i < 13; i++){
   option.innerText = fontValue;
   sizeElement.appendChild(option);
 }
-/******************************************************/
-
 function updateOutput(){
 	var output = document.getElementById("output");
  	var fonts = document.getElementById("fonts");
