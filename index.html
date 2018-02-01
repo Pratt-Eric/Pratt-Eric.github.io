@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <table style="width: 100%;">
+    <tr>
+      <td><h2>New Student Information</h2></td>
+      <td><h2 id="currStudents"></h2></td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input id="firstName" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input id="lastName" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Date of Birth:</td>
+            <td><input id="dob" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Student Id:</td>
+            <td><input id="id" type="text"/></td>
+          </tr>
+        </table>
+      </td>
+      <td style="vertical-align: top;">
+        <table id="studentInfo"></table>
+      </td>
+    </tr>
+  </table>
+  <div style="display: block; float: left;">
+    <br/>
+    <button value="Create Student" onclick="createStudent()">Add Student</button>
+  </div>
+  <br/>
+  <script type="text/javascript" src="main.js"></script>
+</html>
