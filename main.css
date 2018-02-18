@@ -218,52 +218,52 @@ td{
 
 @keyframes shrink {
   0% {
-    transform: scale(1);
-    border-radius: 20px;
+	transform: scale(1);
+	border-radius: 20px;
   }
   100% {
-    transform: scale(.1);
-    border-radius: 100%;
+	transform: scale(.1);
+	border-radius: 100%;
   }
 }
 
 @keyframes stretch {
   0% {
-    transform: scale(.1);
-    border-radius: 100%;
+	transform: scale(.1);
+	border-radius: 100%;
   }
   100% {
-    transform: scale(1);
-    border-radius: 20px;
+	transform: scale(1);
+	border-radius: 20px;
   }
-} 
+}
 
 @keyframes ripple {
   0% {
-    background: radial-gradient(#34db40 5%, green 15%);
+	background: radial-gradient(#34db40 5%, green 15%);
   }
   12.5% {
-    background: radial-gradient(green 2%, #34db40 25%, green 30%);
+	background: radial-gradient(green 2%, #34db40 25%, green 30%);
   }
   25% {
-    background: radial-gradient(green 5%, #34db40 40%, green 60%);
+	background: radial-gradient(green 5%, #34db40 40%, green 60%);
   }
   37.5% {
-    background: radial-gradient(green 10%, #34db40 55%, green 75%);
+	background: radial-gradient(green 10%, #34db40 55%, green 75%);
   }
   50% {
-    background: radial-gradient(green 20%, #34db40 60%, green 80%);
+	background: radial-gradient(green 20%, #34db40 60%, green 80%);
   }
   62.5%{
-    background: radial-gradient(green 30%, #34db40 70%, green 90%);
+	background: radial-gradient(green 30%, #34db40 70%, green 90%);
   }
   75% {
-    background: radial-gradient(green 50%, #34db40 90%, green 95%);
+	background: radial-gradient(green 50%, #34db40 90%, green 95%);
   }
   87.5% {
-    background: radial-gradient(green 75%, #34db40 99%, green 100%);
+	background: radial-gradient(green 75%, #34db40 99%, green 100%);
   }
   100%{
-    background: radial-gradient(green);
+	background: radial-gradient(green);
   }
 }
