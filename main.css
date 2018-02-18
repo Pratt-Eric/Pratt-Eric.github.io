@@ -236,7 +236,7 @@ td{
     transform: scale(1);
     border-radius: 20px;
   }
-}
+} 
 
 @keyframes ripple {
   0% {

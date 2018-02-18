@@ -46,7 +46,7 @@ function selectFalse(){
   trueButton.classList.remove("selected");
   falseButton.classList.add("selected");
   currQuestion.answer = false;
-}
+} 
 
 function submitAnswer(){
   if(currQuestion.answer !== undefined){
