@@ -66,13 +66,13 @@ function submitAnswer(){
     }else{
       var parent = document.getElementById("parentWindow");
       var child = document.getElementById("mainWindow");
-      child.classList.add("finished");
-      for(var i = 0; i < 5000; i++){
-        
-      }
-      parent.removeChild(child);
-      
       var window = document.createElement("div");
+      child.classList.add("finished");
+      setTimeout(function (){
+        parent.removeChild(child);
+        parent.appendChild(window);
+      }, 200);
+      
       window.classList.add("window");
       window.setAttribute("id", "mainWindow");
       
@@ -98,7 +98,6 @@ function submitAnswer(){
       buildRowsForTable(table);
       results.appendChild(table);
       window.appendChild(results);
-      parent.appendChild(window);
     }
   }
 }
@@ -123,11 +122,11 @@ function buildRowsForTable(table){
     table.appendChild(tr);
   }
 }
-function sleep(milliseconds) {
+
+function wait(mil){
   var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
+  var end = start;
+  while(end - start < mil){
+    end = new Date().getTime();
   }
 }
