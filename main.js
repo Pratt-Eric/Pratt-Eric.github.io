@@ -27,6 +27,7 @@ var bibleQuestion = new question("Do Mormons believe in the Bible?", true);
 questions.push(bibleQuestion);
 
 var randomIndex = Math.floor(Math.random() * questions.length);
+console.log(randomIndex);
 var currQuestion = questions[randomIndex];
 
 var questionPane = document.getElementById("question-text");
