@@ -88,7 +88,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
-} 
+}
 
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -99,6 +99,8 @@
 }
 
 .main{
+  height: 400px;
+  width: 600px;
   background-color: #c5d3ea;
   position: relative;
   top: 50px;
@@ -108,21 +110,6 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   box-shadow: 0 0 50px #333;
-}
-
-.game{
-	width: 600px;
-	height: 400px;
-}
-
-.info{
-	width: 800px;
-	height: 400px;
-}
-
-.media{
-	width: 900px;
-	height: 500px;
 }
 
 .play-box{
