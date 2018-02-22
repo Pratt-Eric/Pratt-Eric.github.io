@@ -99,6 +99,8 @@
 }
 
 .main{
+  width: 600px;
+  height: 400px;
   background-color: #c5d3ea;
   position: relative;
   top: 50px;
@@ -109,20 +111,6 @@
   border-radius: 10px;
   box-shadow: 0 0 50px #333;
 }
-
-.game{
-	width: 600px;
-	height: 400px;
-}
-
-.info{
-	width: 800px;
-	height: 400px;
-}
-
-.media{
-	width: 900px;
-	height: 500px;
 
 .play-box{
   padding: 10px;
