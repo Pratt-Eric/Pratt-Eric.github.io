@@ -99,7 +99,7 @@ function submitAnswer(){
       results.appendChild(table);
       window.appendChild(results);
     }
-  }
+  } 
 }
 
 function buildRowsForTable(table){
