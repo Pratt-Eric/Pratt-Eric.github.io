@@ -110,7 +110,7 @@ function buildRowsForTable(table){
     td.innerText = q.question;
     tr.appendChild(td);
     td = document.createElement("td");
-    td.innerText = q.correctAnswer;
+    td.innerText = q.answer;
     tr.appendChild(td);
     td = document.createElement("td");
     if(q.correctAnswer !== q.answer){
