@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON Example</title>
+	<link rel="stylesheet" type="text/css" href="json.css"/>
+  </head>
+  <body>
+    <div style="margin-bottom: 20px;">
+      <div style="margin-bottom: 20px;">
+        To display JSON information from https://api.publicapis.org please fill in any of the fields below:
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>Title:</td>
+            <td><input id="title" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><input id="description" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Auth</td>
+            <td><input id="auth" type="text"/></td>
+          </tr>
+          <tr>
+            <td>HTTPS</td>
+            <td><input id="https" type="text"/></td>
+          </tr>
+          <tr>
+            <td>CORS</td>
+            <td><input id="cors" type="text"/></td>
+          </tr>
+          <tr>
+            <td>Category</td>
+            <td><input id="category" type="text"/></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button onclick="getTheThings()" style="margin-bottom: 10px;">Retrieve Data</button>
+    <hr/>
+    <div id="buttons"></div>
+    <div id="tree"></div>
+	<script src="json.js"></script>
+  </body>
+</html>
