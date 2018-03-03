@@ -22,7 +22,7 @@ function getTheThings(){
 
 function buildButtons(){
   var buttons = document.getElementById("buttons");
-  buttons.innerHTML = "<button class=\"json-btn active\" onclick=\"buildTree()\">Plain JSON</button><button class=\"json-btn\" onclick=\"buildJSON()\">Format JSON</button>";
+  buttons.innerHTML = "<button class=\"json-btn active\" onclick=\"buildTree()\">Format JSON</button><button class=\"json-btn\" onclick=\"buildJSON()\">Plain JSON</button>";
 }
 
 function buildTree(){
