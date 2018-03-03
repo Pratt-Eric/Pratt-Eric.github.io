@@ -18,7 +18,7 @@ function getTheThings(){
   console.log(vars);
   httpRequest.send(null);
   document.getElementById("tree").innerHTML = "Processing...";
-}
+} 
 
 function buildButtons(){
   var buttons = document.getElementById("buttons");
