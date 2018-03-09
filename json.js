@@ -1,4 +1,4 @@
-var data;
+// var data;
 var heirarchy = [];
 var vars = '';
 function getTheThings(){
@@ -9,7 +9,9 @@ function getTheThings(){
   //httpRequest.setRequestHeader("Content-type", "application/json");
   httpRequest.onreadystatechange = function(){
     if(httpRequest.readyState == 4 && httpRequest.status == 200){
-      data = JSON.parse(httpRequest.responseText);
+      var data = JSON.parse(httpRequest.responseText);
+      var dataString = JSON.stringify(data.entries);
+      localStorage.setItem("data", dataString);
       buildButtons();
       buildTree();
       // document.getElementById("tree").innerText = "";
@@ -28,13 +30,15 @@ function buildButtons(){
 function buildTree(){
   var tree = document.getElementById("tree");
   tree.innerText = "";
-  var entries = data.entries;
+  var dataString = localStorage.getItem("data");
+  var entries = JSON.parse(dataString);
+  console.log(entries);
   for(var i = 0; i < entries.length; i++){
     var obj = entries[i];
     var ul = document.createElement("ul");
     var li = document.createElement("li");
     li.innerHTML = "<div class=\"json-obj\">" + obj.API + "</div>";
-    
+
     var newUl = document.createElement("ul");
     var newLi = document.createElement("li");
     var table = document.createElement("table");
@@ -67,7 +71,7 @@ function buildTree(){
     newLi.appendChild(table);
     newUl.appendChild(newLi);
     li.appendChild(newUl);
-    
+
     ul.appendChild(li);
     tree.appendChild(ul);
   }
@@ -77,6 +81,8 @@ function parseElement(element){
   //build heirarchy of all parent elements from this point
   buildHeirarchy(element);
   //use that heirarchy to find the right json element to display
+  var dataString = localStorage.getItem("data");
+  var data = JSON.parse(dataString);
   var entries = data.entries;
   var entry;
   for(var j = 0; j < entries.length; j++){
@@ -94,9 +100,7 @@ function buildHeirarchy(element){
 }
 
 function buildJSON(){
-  var tree = document.getElementById("tree");
-  var entries = data.entries;
-  tree.innerText = JSON.stringify(entries);
+  tree.innerText = localStorage.getItem("data");
 }
 
 function buildJSONVars(){
