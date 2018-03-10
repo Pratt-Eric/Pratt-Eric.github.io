@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Do The Things</title>
+    <link rel="stylesheet" href="canvas.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="mediabar">
+        <button class="btn active" onclick="makeCanvasActive()" id="canvasbtn" type="button" style="width: 33%; border-radius: 10px 0 0 10px;">Canvas</button>
+        <button class="btn" onclick="makeVideoActive()" id="videobtn" type="button" style="width: 33%;">Video Player</button>
+        <button class="btn" onclick="makeAudioActive()" id="audiobtn" type="button" style="width: 33%; border-radius: 0 10px 10px 0;">Audio Player</button>
+      </div>
+    </div>
+    <div id="canvascard" class="card">
+      <div class="toolbar">
+        <button id="line" onclick="makeLineActive()" type="button" name="button1" class="btn active" style="border-radius: 10px 0 0 0;">Line</button>
+        <button id="circle" onclick="makeCircleActive()" type="button" name="button2" class="btn">Circle</button>
+        <button id="square" onclick="makeSquareActive()" type="button" name="button3" class="btn">Square</button>
+      </div>
+      <div class="canvas">
+        <canvas id="canvas" height="500" width="700"></canvas>
+      </div>
+    </div>
+    <div id="videocard" class="card">
+      <div class="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ddenqErLL0Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="audiocard" class="card">
+      <div class="media">
+        <audio controls>
+          <source src="oneofus.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="canvas.js"></script>
+</html>
