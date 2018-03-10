@@ -169,3 +169,6 @@ parent.removeChild(audiocard);
 localStorage.setItem("activecard", "canvas");
 localStorage.setItem("active", "line");
 addListener();
+function instructions(){
+  alert("To draw on canvas:\n1. Select the shape you want to make.\n2. Make a click in the starting location.\n3. Make a click in a second location.\n\nDraggin doesn't work\n\nFor Circles, the diameter is calculated based on the difference of the x-axis variables before inserting it.");
+}
