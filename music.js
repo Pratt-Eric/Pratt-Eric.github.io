@@ -16,5 +16,5 @@ function changeSelectedTextColor(id){
       listItems[i].childNodes[0].classList.remove("active");
     }
   }
-  document.getElementById(id).classList.add("active");
+  document.getElementById(id).classList.add("active"); 
 }
