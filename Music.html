@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <link rel="stylesheet" href="music.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <img src="media/piano keys2.png" alt="Piano Keys">
+      </div>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Music
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Music.html">Stream YouTube</a>
+            <a href="Audio.html">Listen to audio</a>
+            <a href="Store.html">Store</a>
+          </div>
+        </div>
+        <a href="About.html">About</a>
+      </div>
+      <div class="main">
+        <div class="sidebar">
+          <div class="sidebar-header">
+            Available Music
+          </div>
+          <hr/>
+          <ul id="music-list">
+            <li><a id="1" class="active" onclick="selectVideo(this.id)">I Know That My Redeemer Lives</a></li>
+            <li><a id="2" onclick="selectVideo(this.id)">I Believe In Christ</a></li>
+            <li><a id="3" onclick="selectVideo(this.id)">I'm Trying To Be Like Jesus</a></li>
+            <li><a id="4" onclick="selectVideo(this.id)">Tragedy</a></li>
+            <li><a id="5" onclick="selectVideo(this.id)">Tragedy Pt 2</a></li>
+          </ul>
+        </div>
+        <div class="media">
+          <div class="main-header">
+            I Know That My Redeemer Lives
+          </div>
+          <div class="main-media">
+            <iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/5TD7mR-xDIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="music.js"></script>
+  </body>
+</html>
