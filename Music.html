@@ -16,9 +16,9 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="Music.html">Stream YouTube</a>
-            <a href="Audio.html">Listen to audio</a>
-            <a href="Store.html">Store</a>
+            <button class="menuitem" onclick="showMedia('video')">Stream YouTube</button>
+            <button class="menuitem" onclick="showMedia('audio')">Listen to audio</button>
+            <a href="#">Store</a>
           </div>
         </div>
         <a href="About.html">About</a>
@@ -29,20 +29,22 @@
             Available Music
           </div>
           <hr/>
-          <ul id="music-list"> 
-            <li><a id="1" class="active" onclick="selectVideo(this.id)">I Know That My Redeemer Lives</a></li>
-            <li><a id="2" onclick="selectVideo(this.id)">I Believe In Christ</a></li>
-            <li><a id="3" onclick="selectVideo(this.id)">I'm Trying To Be Like Jesus</a></li>
-            <li><a id="4" onclick="selectVideo(this.id)">Tragedy</a></li>
-            <li><a id="5" onclick="selectVideo(this.id)">Tragedy Pt 2</a></li>
+          <ul id="music-list">
+            <li><a id="1" class="arrangement active" onclick="selectMedia(this.id)">I Know That My Redeemer Lives</a></li>
+            <li><a id="2" class="arrangement" onclick="selectMedia(this.id)">I Believe In Christ</a></li>
+            <li><a id="3" class="arrangement" onclick="selectMedia(this.id)">I'm Trying To Be Like Jesus</a></li>
+            <li><a id="4" class="arrangement" onclick="selectMedia(this.id)">Tragedy</a></li>
+            <li><a id="5" class="arrangement" onclick="selectMedia(this.id)">Tragedy Pt 2</a></li>
           </ul>
         </div>
-        <div class="media">
-          <div class="main-header">
-            I Know That My Redeemer Lives
-          </div>
-          <div class="main-media">
-            <iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/5TD7mR-xDIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div id="media">
+          <div id="video">
+            <div id="main-header">
+              I Know That My Redeemer Lives
+            </div>
+            <div class="main-media">
+              <iframe id="source" width="560" height="315" src="https://www.youtube.com/embed/5TD7mR-xDIo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
