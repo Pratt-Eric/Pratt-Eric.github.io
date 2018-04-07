@@ -180,6 +180,7 @@ button:focus{
 
 .main-media{
   overflow: auto;
+  animation: diddlyboop 1s;
 }
 
 @keyframes ripple {
@@ -209,5 +210,20 @@ button:focus{
   }
   100%{
     background: radial-gradient(#2d6d7a 100%, #388999 100%);
+  }
+}
+
+@keyframes diddlyboop {
+  0%{
+    transform: scale(0.4, 0.4);
+    box-shadow: 0 0 5px 5px #000000;
+  }
+  90%{
+    transform: scale(1, 1);
+    box-shadow: 0 0 100px 75px #275f6b;
+  }
+  100%{
+    transform: scale(1, 1);
+    box-shadow: 0;
   }
 }
