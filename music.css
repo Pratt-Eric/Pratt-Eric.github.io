@@ -180,7 +180,7 @@ button:focus{
 
 .main-media{
   overflow: auto;
-  animation: diddlyboop 1s;
+  animation: diddlyboop .4s;
 }
 
 @keyframes ripple {
